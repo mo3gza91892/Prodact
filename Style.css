@@ -13,10 +13,14 @@ header{
     margin: 15px 30px;
 }
 header h1{
-    color: #ff0f1f;
+    color: wheat;
     padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
-    border: 3px dotted #d5d5d5;
+    font-size: 38px;
+    text-transform: uppercase;
 }
 header ul{
     display: flex;
@@ -30,13 +34,14 @@ header ul li{
     align-items: center;
     padding: 0px 10px;
     border-radius: 15px;
-    align-self: stretch;
-    background-color: wheat;
+    border:3px dashed wheat;
 }
 header ul li a{
     color: darkred;
     text-align: center;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
 }
 .countiner{
     width: 100%;
