@@ -86,7 +86,7 @@ header ul li a{
 .Numbers .Price,.Many{
     width: 100%;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 655px){
     header{
         justify-content: center;
     }
