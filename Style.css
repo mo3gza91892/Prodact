@@ -7,8 +7,8 @@ body{
     height: 97.7vh;
 }
 header{
-    text-align: center;
     display: flex;
+    text-align: center;
     justify-content: space-between;
     margin: 15px 30px;
 }
@@ -85,4 +85,12 @@ header ul li a{
 }
 .Numbers .Price,.Many{
     width: 100%;
+}
+@media screen and (max-width: 600px){
+    header{
+        justify-content: center;
+    }
+    header ul{
+        display: none;
+    }
 }
