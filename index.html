@@ -1,3 +1,16 @@
+<!-- <?php
+    $Name = $_POST['PName'];
+    $Many = $_POST['PMany'];
+    $Price = $_POST['PPrice'];
+    
+    $conn = mysqli_connect('localhost','root','root','prodacts');
+    if (!$conn) {
+        echo'Error';
+    }
+    $SQL = "INSERT INTO DBPRO(Name,Many,Price)
+    VALUES('$Name','$Many','$Price')";
+    mysqli_query($conn,$SQL);
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,25 +34,27 @@
     <div class="countiner">
         <img src="./IMG/5455538.png" alt=":(">
         <div class="inputs">
-            <label for="PName">ادخل اسم المنتج</label>
-            <input type="text" id="PName">
-            <div class="Numbers">
-                <div class="Many">
-                    <label for="PMany">ادخل كمية المنتج</label>
-                    <input type="number" id="PMany">
+            <form action="./index.php" method="post">
+                <label for="PName">ادخل اسم المنتج</label>
+                <input type="text" name="PName" id="PName">
+                <div class="Numbers">
+                    <div class="Many">
+                        <label for="PMany">ادخل كمية المنتج</label>
+                        <input type="number" name="PMany" id="PMany">
+                    </div>
+                    <div class="Dis">
+                        <label for="Dis">ادخل خصم المنتج</label>
+                        <input type="number" name="Dis" id="Dis">
+                    </div>
+                    <div class="Price">
+                        <label for="PPrice">ادخل سعر المنتج</label>
+                        <input type="number" name="PPrice" id="PPrice">
+                    </div>
                 </div>
-                <div class="Dis">
-                    <label for="Dis">ادخل خصم المنتج</label>
-                    <input type="number" id="Dis">
+                <div class="Send">
+                    <input type="submit" value="إرســال">
                 </div>
-                <div class="Price">
-                    <label for="PPrice">ادخل سعر المنتج</label>
-                    <input type="number" id="PPrice">
-                </div>
-            </div>
-            <div class="Send">
-                <button>إرســال</button>
-            </div>
+            </form>
         </div>
     </div>
 <script src="./Script.js"></script>    
