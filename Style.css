@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    transition: 1.5s;
 }
 body{
     background:linear-gradient(#51050f,#000 22%);
