@@ -59,25 +59,29 @@ header ul li a{
     background-color: hsla(39, 77%, 83%, 0.158);
     width: 40vh;
 }
-.countiner .inputs{
+.countiner .inputs input{
     width: 90%;
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.countiner .inputs input{
+.countiner .inputs label{
+    color: wheat;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.countiner #PName,#PMany,#Dis,#PPrice{
     width: 85%;
     height: 25px;
     border-radius: 30px;
     border: 3px solid #51050f;
     margin-bottom: 15px;
     text-align: center;
-}
-.countiner .inputs label{
-    color: wheat;
-    font-size: 4.5vw;
-    font-weight: bold;
 }
 .Numbers{
     width: 90%;
@@ -88,20 +92,25 @@ header ul li a{
     width: 100%;
 }
 .Send{
-    width: 100%;
+    width: 50%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.Send button{
-    width: 85%;
-    padding: 0 0px;
-    font-size: 3vw;
+.Send input{
     border: 0.6vw dashed #51050f;
+    font-size: 5vw;
     font-weight: bold;
     background-color: wheat;
     border-radius: 30px;
+    padding: 5px 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width: 655px){
     header{
