@@ -1,16 +1,3 @@
-<!-- <?php
-    $Name = $_POST['PName'];
-    $Many = $_POST['PMany'];
-    $Price = $_POST['PPrice'];
-    
-    $conn = mysqli_connect('localhost','root','root','prodacts');
-    if (!$conn) {
-        echo'Error';
-    }
-    $SQL = "INSERT INTO DBPRO(Name,Many,Price)
-    VALUES('$Name','$Many','$Price')";
-    mysqli_query($conn,$SQL);
-?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +21,7 @@
     <div class="countiner">
         <img src="./IMG/5455538.png" alt=":(">
         <div class="inputs">
-            <form action="./index.html" method="post">
+            <form action="./index.php" method="post">
                 <label for="PName">ادخل اسم المنتج</label>
                 <input type="text" name="PName" id="PName">
                 <div class="Numbers">
@@ -52,7 +39,7 @@
                     </div>
                 </div>
                 <div class="Send">
-                    <input type="submit" value="إرســال">
+                    <input type="submit" name="submit" id="submit" value="إرســال">
                 </div>
             </form>
         </div>
